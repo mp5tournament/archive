@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html style="font-size: 16.0641px;"><script src="chrome-extension://dlcobpjiigpikoobohmabehhmhfoodbb/inpage.js" id="argent-x-extension" data-extension-id="dlcobpjiigpikoobohmabehhmhfoodbb"></script><head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2220 0 100 100%22><text y=%22.8em%22 font-size=%22100%22>📊</text></svg>">
+    <meta charset="utf-8">
+    <title id="h0">MP5PUBG: Room E - 中量级 结果</title>
+<style>
+@font-face {
+  font-family: 'osu';
+  font-weight: 100;
+  src: url('https://mp5tournament.github.io/assets/Torus-Thin.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 300;
+  src: url('https://mp5tournament.github.io/assets/Torus-Light.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 400;
+  src: url('https://mp5tournament.github.io/assets/Torus-Regular.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 600;
+  src: url('https://mp5tournament.github.io/assets/Torus-SemiBold.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 700;
+  src: url('https://mp5tournament.github.io/assets/Torus-Bold.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 900;
+  src: url('https://mp5tournament.github.io/assets/Torus-Heavy.otf');
+}
+@font-face {
+  font-family: 'cn';
+  src: url('https://mp5tournament.github.io/assets/shangshouruantang.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+    user-select: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+body.bg{
+    background: radial-gradient( #a1a,#026);
+    background-size: 200% 200%;
+    animation: bgFlow 15s linear infinite;
+}
+@keyframes bgFlow {
+    0%, 100% { background-position: 0% 0%; }
+    32% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    82% { background-position: 0% 100%; }
+}
+/* 背景方块 */
+body:not(.bg) .bg-squares{
+    display: none;
+} 
+.bg .bg-squares{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.bg .bg-squares li{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.15);
+    position: absolute;
+    bottom: -160px;
+    animation: square 10s linear infinite;
+}
+.bg .bg-squares li:nth-child(1){
+    left: 10%;
+}
+.bg .bg-squares li:nth-child(2){
+    left: 20%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+.bg .bg-squares li:nth-child(3){
+    left: 25%;
+    animation-delay: 4s;
+}
+.bg .bg-squares li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.25);
+    animation-duration: 22s;
+}
+.bg .bg-squares li:nth-child(5){
+    left: 70%;
+}
+.bg .bg-squares li:nth-child(6){
+    left: 80%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.2);
+    animation-delay: 3s;
+}
+.bg .bg-squares li:nth-child(7){
+    left: 32%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 7s;
+}
+.bg .bg-squares li:nth-child(8){
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 15s;
+    animation-duration: 40s;
+}
+.bg .bg-squares li:nth-child(9){
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.3);
+    animation-delay: 2s;
+    animation-duration: 40s;
+}
+.bg .bg-squares li:nth-child(10){
+    left: 90%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 11s;
+}
+@keyframes square {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-120vh) rotate(600deg);
+    }
+}
+
+/* mods图标 */
+i {
+    display: inline-block;
+    width: 0.5em;
+    height: 1em;
+}
+i::after{
+    content: '';
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 0.2em white;
+}
+
+.HT::after { background-image: url('https://mp5tournament.github.io/assets/HT.png'); }
+.DT::after { background-image: url('https://mp5tournament.github.io/assets/DT.png'); }
+
+.EZ::after { background-image: url('https://mp5tournament.github.io/assets/EZ.png'); }
+.HR::after { background-image: url('https://mp5tournament.github.io/assets/HR.png'); }
+.HD::after { background-image: url('https://mp5tournament.github.io/assets/HD.png'); }
+.FL::after { background-image: url('https://mp5tournament.github.io/assets/FL.png'); }
+
+.NM::after { background-image: url('https://mp5tournament.github.io/assets/NM.png'); }
+/* 主逻辑 */
+#main {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+.header .game:hover, .player .username:hover{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-family: 'cn';
+    font-weight: 400;
+    font-size: 3rem;
+    display: block;
+    height:4rem;
+    filter: drop-shadow(0 0 0.1rem rgba(255,255,128,0.8)) drop-shadow(0 0 0.5rem rgba(238,221,255,0.6));
+}
+
+.scroll{
+    white-space: nowrap;
+    height: 1em;
+    width: 4.5rem;
+    line-height: 1em;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-text {
+    display: inline-block; 
+    min-width: 100%;
+    position: relative;
+    left: 0;
+    animation: scrolling 10s infinite linear;
+}
+.scroll-text-picker {
+    display: inline-block; 
+    min-width: 100%;
+    position: relative;
+    left: 0;
+    animation: scrolling-picker 10s infinite linear;
+}
+
+
+/* 文本滚动动画 */
+@keyframes scrolling {
+    0%, 10% {
+        transform: translateX(0);
+    }
+    50%,60% {
+        transform: translateX(calc(min(0px, 4.5rem - 100%)));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes scrolling-picker {
+    0%, 10% {
+        transform: translateX(0);
+    }
+    50%,60% {
+        transform: translateX(calc(min(0px, 3.5rem - 100%)));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+td:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+td {
+    border: 0.05rem solid  rgba(0,0,0,0.1);
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    padding: 0 0.25rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 5rem;
+    height: 5rem;
+    max-width: 5rem;
+    max-height: 5rem;
+}
+td.rank{
+    width:3rem;
+}
+.header .game, .header .round{
+    background-size: 100% 100%;
+    position: relative;
+}
+.header .game::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+.header .game:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+}
+.header .game > div{
+    position: relative;
+    z-index: 20;
+}
+.header .game .round-game{
+    font-family: 'osu';
+    font-weight: 700;
+    font-size:1.2rem;
+    height:1.2rem;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+    text-align: center;
+}
+.header .game .pick *{
+    color:#aaa;
+    height: 1rem;
+    line-height: 1rem;
+}
+.header .game .pick .by{
+    font-size:0.6rem;
+    float:left;
+}
+.header .game .pick .picker{
+    width: 3.5rem;
+    font-size:0.8rem;
+    font-family: 'osu';
+    font-weight: 600;
+    float: right;
+}
+.header .game .song-title{
+    height: 1.1rem;
+}
+.header .game .song-title *{
+    color: rgba(255,255,255,0.5);
+    font-size:0.6rem;
+}
+.header .game .mods{
+    height:1rem;
+}
+.header .game .mods .fixed{
+    float: left;
+    margin-right: 0.5em;
+}
+.header .game .mods .award{
+    float: right;
+    margin-right: 0.5em;
+}
+
+.header .rank,.header .username,.header .round{
+    background-color: rgba(255,255,255,0.2);
+}
+.header .rank:hover,.header .username:hover,.header .round:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.header .rank div,.header .username div{
+    text-align: center;
+    font-family: 'cn';
+    font-size: 1.4rem;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+}
+.header .round .text{
+    text-align: center;
+    font-family: 'cn';
+    filter: drop-shadow(0 0 0.2rem #ff8);
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+.header .round .logo,.header .round .number{
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-family: 'osu';
+    font-weight: 700;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+}
+
+.player .rank div{
+    text-align: center;
+    font-family: 'osu';
+    font-size: 700;
+    font-size: 1.4rem;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+}
+.player .username {
+    text-align: center;
+}
+.player .username img{
+    margin: auto;
+    width:3rem;
+    height:3rem;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0 0 0.2rem #ff0) drop-shadow(0 0 0.3rem #edf);
+}
+.player .username div{
+    font-family: 'osu';
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.player td.game,.player td.round{
+    padding: 0 0.5rem;
+}
+
+.player .round .logo{
+    font-family: 'osu';
+    word-spacing: -0.25rem;
+    text-align: center;
+    font-size: 1.8rem;
+    height:1.8rem;
+    margin-top: 0.4rem;
+}
+.player .round .logo.eliminate{
+    filter: drop-shadow(0 0 0.2rem #f00) drop-shadow(0 0 0.4rem #f64) drop-shadow(0 0 0.5rem #f64);
+}
+.player .round .logo.pass{
+    filter: drop-shadow(0 0 0.4rem #8af);
+}
+.player .round .logo.champion{
+    filter: drop-shadow(0 0 0.2rem #8af) drop-shadow(0 0 0.4rem #ff8) drop-shadow(0 0 0.5rem #ff8);
+}
+.player .round .logo.award{
+    filter: drop-shadow(0 0 0.4rem #8af);
+}
+.player .round .logo.going{
+    filter: drop-shadow(0 0 0.4rem #fa0);
+}
+
+.player .rank-points{
+    height: 1.4rem;
+}
+.player .rank-points .rank{
+    font-family: 'osu';
+    font-weight: 400;
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    word-spacing: -0.25rem;
+    float: left;
+}
+.player .rank-points .rank .half{
+    font-size:0.7rem;
+}
+
+.rank-1{
+    font-weight: 700 !important;
+    word-spacing: -0.15rem !important;
+    color: rgb(255,232,72) !important;
+    filter: drop-shadow(0 0 0.25rem rgba(255,232,72,0.5)) drop-shadow(0 0 0.1rem rgba(255,232,72,0.8)) !important;
+}
+.rank-1 .half{
+    font-weight: 700 !important;
+    color: rgb(255,232,72) !important;
+    filter: drop-shadow(0 0 0.1rem rgba(255,232,72,0.5)) !important;
+}
+.rank-2{
+    font-weight: 700 !important;
+    color: rgb(192,192,220) !important;
+    filter: drop-shadow(0 0 0.25rem rgba(192,192,220,0.5)) drop-shadow(0 0 0.1rem rgba(192,192,220,0.8)) !important;
+}
+.rank-2 .half{
+    font-weight: 700 !important;
+    color: rgb(192,192,220) !important;
+    filter: drop-shadow(0 0 0.1rem rgba(192,192,220,0.5)) !important;
+}
+.rank-3{
+    font-weight: 700 !important;
+    color: rgb(240,172,72) !important;
+    filter: drop-shadow(0 0 0.25rem rgba(240,172,72,0.5)) drop-shadow(0 0 0.1rem rgba(240,172,72,0.8)) !important;
+}
+.rank-3 .half{
+    font-weight: 700 !important;
+    color: rgb(240,172,72) !important;
+    filter: drop-shadow(0 0 0.1rem rgba(240,172,72,0.5)) !important;
+}
+.player .points{
+    font-family: 'Consolas';
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    height: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.75);
+    float: right;
+}
+.player .game .award-mods{
+    height: 1.4rem;
+    margin-top: 0.4rem;
+}
+.player .game .award-mods .award{
+    float: left;
+}
+.player .game .award-mods .mods{
+    float: right;
+    margin-right: 0.5em;
+}
+.player .game .score{
+    font-family: 'Consolas';
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.75);
+    text-align: right;
+}
+
+
+.player .lite-rank{
+    width:100%;
+    text-align: center;
+    font-family: 'osu';
+    font-weight: 400;
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    word-spacing: -0.25rem;
+    float: left;
+    margin-bottom: 0.25rem;
+}
+.player .lite-score{
+    width:100%;
+    text-align: center;
+    font-family: 'Consolas';
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.75);
+}
+.player .lite-points{
+    font-family: 'Consolas';
+    font-size: 0.8rem;
+    margin-top: -0.8rem;
+    transform: translateY(0.8rem);
+    height: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.75);
+    float: right;
+
+}
+</style>
+
+<style type="text/css">button[data-v-4f04decd]:focus{outline:0}.TransIcon[data-v-4f04decd]{position:fixed !important;transition:all .2s linear;animation:fadeIn-4f04decd .2s linear;z-index:999999999999999;filter:unset;width:34px;height:34px;border-radius:11px;border:1px solid #f1f1f1;overflow:hidden}.TransIcon img[data-v-4f04decd]{width:32px;height:32px;object-fit:cover;pointer-events:none}.TransIcon[data-v-4f04decd]:hover{cursor:pointer}.TransDialog[data-v-4f04decd]{position:fixed !important;animation:fadeIn-4f04decd .2s linear;background:#fff;border-radius:16px;border:1px solid #f1f1f1;box-shadow:0px 8px 40px 0px rgba(0,0,0,.1);overflow:hidden;z-index:999999999999999}.TransDialog .dragBlock[data-v-4f04decd]{position:absolute;top:0;left:0;right:0}.TransDialog .dragBlock[data-v-4f04decd]:hover{cursor:move}.TransDialog .dragBlock .top-drap-block[data-v-4f04decd],.TransDialog .dragBlock .left-drap-block[data-v-4f04decd]{position:absolute;left:0}.TransDialog .dragBlock .top-drap-block[data-v-4f04decd]{right:0;height:15px}.TransDialog .dragBlock .left-drap-block[data-v-4f04decd]{height:55px;right:120px}.TransDialog .dragBlock.preview .left-drap-block[data-v-4f04decd]{width:20px;height:79px;right:160px}.TransDialog .dragBlock.scale .left-drap-block[data-v-4f04decd]{right:53px;left:177px;height:40px}.MOJiWebExtensionpanelObject[data-v-4f04decd]{height:100%;width:calc(100% + 5px);border:none;overflow:hidden;z-index:999999999999999}@keyframes fadeIn-4f04decd{from{opacity:0}to{opacity:1}}
+/*# sourceURL=webpack://src/components/TransDialog/App.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9UcmFuc0RpYWxvZy9BcHAudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBLDhCQUNFLFNBQUEsQ0FHRiw0QkFDRSx5QkFBQSxDQUNBLHlCQUFBLENBQ0Esb0NBQUEsQ0FHQSx1QkFYZSxDQVlmLFlBQUEsQ0FDQSxVQUFBLENBQ0EsV0FBQSxDQUNBLGtCQUFBLENBQ0Esd0JBQUEsQ0FDQSxlQUFBLENBQ0EsZ0NBQ0UsVUFBQSxDQUNBLFdBQUEsQ0FDQSxnQkFBQSxDQUNBLG1CQUFBLENBSUosa0NBQ0UsY0FBQSxDQUdGLDhCQUNFLHlCQUFBLENBRUEsb0NBQUEsQ0FHQSxlQUFBLENBQ0Esa0JBQUEsQ0FDQSx3QkFBQSxDQUVBLDBDQUFBLENBQ0EsZUFBQSxDQUNBLHVCQTFDZSxDQTJDZix5Q0FDRSxpQkFBQSxDQUNBLEtBQUEsQ0FDQSxNQUFBLENBQ0EsT0FBQSxDQUdBLCtDQUNFLFdBQUEsQ0FHRixtSEFDRSxpQkFBQSxDQUNBLE1BQUEsQ0FHRix5REFDRSxPQUFBLENBQ0EsV0FBQSxDQUVGLDBEQUNFLFdBQUEsQ0FDQSxXQUFBLENBS0Esa0VBQ0UsVUFBQSxDQUNBLFdBQUEsQ0FDQSxXQUFBLENBTUYsZ0VBQ0UsVUFBQSxDQUNBLFVBQUEsQ0FDQSxXQUFBLENBTVIsOENBQ0UsV0FBQSxDQUNBLHNCQUFBLENBQ0EsV0FBQSxDQUNBLGVBQUEsQ0FFQSx1QkE5RmUsQ0FxR2pCLDJCQUNFLEtBQ0UsU0FBQSxDQUVGLEdBQ0UsU0FBQSxDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnQC9zY3NzL3ZhcmlhYmxlcy5zY3NzJztcblxuJGRpYWxvZy16LWluZGV4OiA5OTk5OTk5OTk5OTk5OTk7XG5idXR0b246Zm9jdXMge1xuICBvdXRsaW5lOiAwO1xufVxuXG4uVHJhbnNJY29uIHtcbiAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gIHRyYW5zaXRpb246IGFsbCAwLjJzIGxpbmVhcjtcbiAgYW5pbWF0aW9uOiBmYWRlSW4gMC4ycyBsaW5lYXI7XG4gIC8vIHdpZHRoOiAyNHB4O1xuICAvLyBoZWlnaHQ6IDI0cHg7XG4gIHotaW5kZXg6ICRkaWFsb2ctei1pbmRleDtcbiAgZmlsdGVyOiB1bnNldDtcbiAgd2lkdGg6IDM0cHg7XG4gIGhlaWdodDogMzRweDtcbiAgYm9yZGVyLXJhZGl1czogMTFweDtcbiAgYm9yZGVyOiAxcHggc29saWQgI0YxRjFGMTtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgaW1nIHtcbiAgICB3aWR0aDogMzJweDtcbiAgICBoZWlnaHQ6IDMycHg7XG4gICAgb2JqZWN0LWZpdDogY292ZXI7XG4gICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIH1cbn1cblxuLlRyYW5zSWNvbjpob3ZlciB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLlRyYW5zRGlhbG9nIHtcbiAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gIC8vIHRyYW5zaXRpb246IGFsbCAwLjJzIGxpbmVhcjtcbiAgYW5pbWF0aW9uOiBmYWRlSW4gMC4ycyBsaW5lYXI7XG4gIC8vIHdpZHRoOiAzOTJweDtcbiAgLy8gaGVpZ2h0OiA0NDhweDtcbiAgYmFja2dyb3VuZDogI2ZmZmZmZjtcbiAgYm9yZGVyLXJhZGl1czogMTZweDtcbiAgYm9yZGVyOiAxcHggc29saWQgI2YxZjFmMTtcbiAgLy8gb3ZlcmZsb3c6IGF1dG87XG4gIGJveC1zaGFkb3c6IDBweCA4cHggNDBweCAwcHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICB6LWluZGV4OiAkZGlhbG9nLXotaW5kZXg7XG4gIC5kcmFnQmxvY2sge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6MDtcbiAgICBsZWZ0OiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIC8vIGhlaWdodDogNjBweDtcblxuICAgICY6aG92ZXIge1xuICAgICAgY3Vyc29yOiBtb3ZlO1xuICAgIH1cblxuICAgIC50b3AtZHJhcC1ibG9jaywgLmxlZnQtZHJhcC1ibG9jayB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBsZWZ0OiAwO1xuICAgIH1cbiAgICAvLyBkZWZhbHVsdFxuICAgIC50b3AtZHJhcC1ibG9jayB7XG4gICAgICByaWdodDogMDtcbiAgICAgIGhlaWdodDogMTVweDtcbiAgICB9XG4gICAgLmxlZnQtZHJhcC1ibG9jayB7XG4gICAgICBoZWlnaHQ6IDU1cHg7XG4gICAgICByaWdodDogMTIwcHg7XG4gICAgfVxuXG4gICAgLy8gcHJldmlld1xuICAgICYucHJldmlldyB7XG4gICAgICAubGVmdC1kcmFwLWJsb2NrIHtcbiAgICAgICAgd2lkdGg6IDIwcHg7XG4gICAgICAgIGhlaWdodDogNzlweDtcbiAgICAgICAgcmlnaHQ6IDE2MHB4O1xuICAgICAgfVxuICAgIH1cblxuICAgIC8vIGRpYWxvZyB3aXRoIHNjYWxlXG4gICAgJi5zY2FsZSB7XG4gICAgICAubGVmdC1kcmFwLWJsb2NrIHtcbiAgICAgICAgcmlnaHQ6IDUzcHg7XG4gICAgICAgIGxlZnQ6IDE3N3B4O1xuICAgICAgICBoZWlnaHQ6IDQwcHg7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG5cbi5NT0ppV2ViRXh0ZW5zaW9ucGFuZWxPYmplY3Qge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiBjYWxjKDEwMCUgKyA1cHgpO1xuICBib3JkZXI6IG5vbmU7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIC8vIGJhY2tncm91bmQ6ICNmZmZmZmY7XG4gIHotaW5kZXg6ICRkaWFsb2ctei1pbmRleDtcbiAgLy8g5LiN5pi+56S654Gr54uQaWZyYW1l55qE5rua5Yqo5p2hXG4gIC8vICYuZmlyZWZveC1vYmplY3Qge1xuICAvLyAgIHdpZHRoOiBjYWxjKDEwMCUgKyAxNXB4KTtcbiAgLy8gfVxufVxuXG5Aa2V5ZnJhbWVzIGZhZGVJbiB7XG4gIGZyb20ge1xuICAgIG9wYWNpdHk6IDA7XG4gIH1cbiAgdG8ge1xuICAgIG9wYWNpdHk6IDE7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+<body class="bg">
+    <div style="z-index: 2;">
+        <h1><span id="h2">MP5PUBG: Room E - 中量级</span> <span id="h3">结果</span></h1>
+        <table id="main"><tr class="header"><td class="rank"><div>👑</div></td><td class="username"><div>选手</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1871920/covers/list.jpg&quot;);">
+<div class="round-game">1 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Ayasaki Nanoka</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Dance In The Game</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/974362/covers/list.jpg&quot;);">
+<div class="round-game">1 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (4)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">劣等上等</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1933416/covers/list.jpg&quot;);">
+<div class="round-game">1 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Eurika</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">瞳の中の迷宮</span></div>
+<div class="mods"><div class="fixed"><i class="DT"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/757146/covers/list.jpg&quot;);">
+<div class="round-game">1 - 4</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">-fm777-</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">C-TYPE</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2167384/covers/list.jpg&quot;);">
+<div class="round-game">1 - 5</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (5)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Stormy</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">1</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1005463/covers/list.jpg&quot;);">
+<div class="round-game">2 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Toumakazusa</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">ココロ</span></div>
+<div class="mods"><div class="fixed"><i class="DT"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2213046/covers/list.jpg&quot;);">
+<div class="round-game">2 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">box1n</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">333bit</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/811685/covers/list.jpg&quot;);">
+<div class="round-game">2 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">rainbow03</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">山紫水明</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1670325/covers/list.jpg&quot;);">
+<div class="round-game">2 - 4</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">AiXing1145134</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Split EX (Instrumental Ver.)</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">2</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1949232/covers/list.jpg&quot;);">
+<div class="round-game">3 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">KentoKanami</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">キャットラビング</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="EZ"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1257553/covers/list.jpg&quot;);">
+<div class="round-game">3 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">H4ppy_n3w_y34r</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">妖隠し -あやかしかくし-</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/79498/covers/list.jpg&quot;);">
+<div class="round-game">3 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (2)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">The Pretender</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2292379/covers/list.jpg&quot;);">
+<div class="round-game">3 - 4</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">wings_wacr</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">み　む　かｩ　わ　ナ　イ　ス　ト　ラ　イ</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">3</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1115477/covers/list.jpg&quot;);">
+<div class="round-game">4 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Atahana</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">カラーズぱわーにおまかせろ！</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/476695/covers/list.jpg&quot;);">
+<div class="round-game">4 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (1)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">ninelie (REDSHiFT x Vesuvia remix)</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1404084/covers/list.jpg&quot;);">
+<div class="round-game">4 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Doubi_wert</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">ドリドリ</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">4</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2378562/covers/list.jpg&quot;);">
+<div class="round-game">5 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (3)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">See You Again</span></div>
+<div class="mods"><div class="fixed"><i class="NC"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/869649/covers/list.jpg&quot;);">
+<div class="round-game">5 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">mike233333</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">G e n g a o z o - f o o n</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="EZ"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">5</div></td></tr><tr class="player"><td class="rank"><div class="rank-1">1</div></td><td class="username"><img src="https://a.ppy.sh/14970885" alt="wings_wacr">
+<div class="scroll"><span class="scroll-text">wings_wacr</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">194,402</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">498,153</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">92</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">185,419</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">85</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">603,715</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">569,925</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">477</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">208,957</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">120,587</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">83,682</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">279,240</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">687</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">57</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">75,132</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">71</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">192,563</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">71</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">400,137</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">389,159</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">987</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">849,393</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">509,936</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">731,625</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">1212</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">418,233</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">146,399</div></td><td class="round">
+<div class="logo champion">🏆</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">1362</div></div></td></tr><tr class="player"><td class="rank"><div class="rank-2">2</div></td><td class="username"><img src="https://a.ppy.sh/33214747" alt="KentoKanami">
+<div class="scroll"><span class="scroll-text">KentoKanami</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">46</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">135,072</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">54</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">284,656</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">85</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">163,429</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">69</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">505,344</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">77</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">382,014</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">331</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="EZ"></i></div></div>
+<div class="score">109,358</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">105,045</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">120,311</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">271,202</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">521</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">276,230</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">86</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">204,630</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">730,245</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">71</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">187,002</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">878</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">598,296</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">555,990</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">526,962</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">1053</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="EZ"></i></div></div>
+<div class="score">493,521</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">88,889</div></td><td class="round">
+<div class="logo award">🏅</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">1203</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-3">3</div></td><td class="username"><img src="https://a.ppy.sh/15436106" alt="mike233333">
+<div class="scroll"><span class="scroll-text">mike233333</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">54</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">137,337</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">69</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">332,117</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">69</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">101,618</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-13"># 13</div><div class="points">8</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">209,343</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">62</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">247,781</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">262</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">267,194</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">147,003</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">89,159</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">300,516</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">542</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">71</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">101,224</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">240,978</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">57</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">396,168</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">43</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">128,870</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">813</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">433,632</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">680,610</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">682,694</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">1013</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-4">4</div></td><td class="username"><img src="https://a.ppy.sh/36097722" alt="rainbow03">
+<div class="scroll"><span class="scroll-text">rainbow03</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">85</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">188,015</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">77</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">334,766</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">77</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">160,483</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">54</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">423,674</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">54</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">247,164</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">346</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">286,187</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">86,523</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">273,762</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">258,288</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">636</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">43</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">59,712</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">57</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">156,860</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">43</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">388,111</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">57</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">144,503</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">836</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">333,153</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">741,279</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">464,230</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">986</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-5">5</div></td><td class="username"><img src="https://a.ppy.sh/35475253" alt="AiXing1145134">
+<div class="scroll"><span class="scroll-text">AiXing1145134</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">77</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">186,966</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">31</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">233,387</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">62</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">95,371</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">31</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">298,116</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">46</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">222,821</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">246</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">204,635</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">134,253</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">153,986</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">380,754</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">566</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">14</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">37,828</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">43</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">133,593</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">86</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">432,585</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">86</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">324,492</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">795</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-6">6</div></td><td class="username"><img src="https://a.ppy.sh/31174220" alt="Eurika">
+<div class="scroll"><span class="scroll-text">Eurika</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">69</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">161,718</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">85</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">377,978</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">198,576</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">77</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">573,468</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">69</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">330,084</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">400</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">113,790</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">58,884</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">218,183</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">193,745</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">580</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">86</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">125,564</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">29</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">108,159</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">14</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">0</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">14</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">0</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">723</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-7">7</div></td><td class="username"><img src="https://a.ppy.sh/15875646" alt="Toumakazusa">
+<div class="scroll"><span class="scroll-text">Toumakazusa</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">31</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">88,488</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">62</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">310,215</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">46</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">81,427</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">92</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">732,896</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-12"># 12</div><div class="points">15</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">141,027</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">246</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">374,179</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">35,078</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">105,204</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">312,669</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">496</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">29</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">38,467</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">14</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">105,839</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">29</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">340,385</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">29</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">84,763</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">596</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-8">8</div></td><td class="username"><img src="https://a.ppy.sh/33671030" alt="box1n">
+<div class="scroll"><span class="scroll-text">box1n</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">92</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">192,701</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">92</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">402,492</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">78,954</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-12"># 12</div><div class="points">15</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">249,604</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">213,500</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">277</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">162,261</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">130,386</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">90,243</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">220,439</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">467</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-9">9</div></td><td class="username"><img src="https://a.ppy.sh/30512018" alt="Doubi_wert">
+<div class="scroll"><span class="scroll-text">Doubi_wert</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">128,882</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">23</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">202,295</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">23</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">66,246</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">895,134</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">92</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">455,075</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">277</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">111,149</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">62,609</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">133,047</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">142,823</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">417</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-10">10</div></td><td class="username"><img src="https://a.ppy.sh/28568560" alt="H4ppy_n3w_y34r">
+<div class="scroll"><span class="scroll-text">H4ppy_n3w_y34r</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">23</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">86,628</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">46</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">266,564</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">54</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">89,553</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">46</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">419,355</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">85</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">411,047</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">254</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">220,578</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">54,768</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">104,478</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">157,698</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">404</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-11">11</div></td><td class="username"><img src="https://a.ppy.sh/24684205" alt="Atahana">
+<div class="scroll"><span class="scroll-text">Atahana</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-12"># 12</div><div class="points">15</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">60,809</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">233,414</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">31</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">73,606</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">298,322</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">31</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">210,015</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">154</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-12">12</div></td><td class="username"><img src="https://a.ppy.sh/32689677" alt="Ayasaki Nanoka">
+<div class="scroll"><span class="scroll-text">Ayasaki Nanoka</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">62</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">138,764</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-12"># 12</div><div class="points">15</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">179,783</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-12"># 12</div><div class="points">15</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">38,733</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">23</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">297,869</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">23</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">178,274</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-12"># 12</div><div class="points">138</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-13">13</div></td><td class="username"><img src="https://a.ppy.sh/30122510" alt="-fm777-">
+<div class="scroll"><span class="scroll-text">-fm777-</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-13"># 13</div><div class="points">8</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">33,770</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-13"># 13</div><div class="points">8</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">162,876</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-13"># 13</div><div class="points">8</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">33,379</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">62</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">446,795</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-13"># 13</div><div class="points">8</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">127,457</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-13"># 13</div><div class="points">92</div></div></td></tr></table>
+    </div>
+    
+    <ul class="bg-squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+<script>
+const main=document.getElementById('main')
+// 调整大小
+let width=1
+let height=1
+
+function calculateSize(){
+    try{
+        width=main.querySelector('tr').querySelectorAll('td').length*5+3
+        height=main.querySelectorAll('tr').length*5+8
+    }catch{return}
+    handleResize()
+}
+
+function handleResize() {
+    document.querySelector('html').style.fontSize=Math.min(
+        window.innerWidth/width,
+        window.innerHeight/height,
+        20,
+    )+'px'
+}
+
+if(!document.querySelector('.remove'))calculateSize()
+window.addEventListener('resize', handleResize)
+</script>
+
+
+
+
+</body></html>
