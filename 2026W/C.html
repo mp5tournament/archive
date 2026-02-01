@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html style="font-size: 10.0882px;"><head>
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2220 0 100 100%22&gt;&lt;text y=%22.8em%22 font-size=%22100%22&gt;📊&lt;/text&gt;&lt;/svg&gt;">
+    <meta charset="utf-8">
+    <title id="h0">MP5PUBG: Room C 结果</title>
+<style>
+@font-face {
+  font-family: 'osu';
+  font-weight: 100;
+  src: url('https://mp5tournament.github.io/assets/Torus-Thin.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 300;
+  src: url('https://mp5tournament.github.io/assets/Torus-Light.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 400;
+  src: url('https://mp5tournament.github.io/assets/Torus-Regular.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 600;
+  src: url('https://mp5tournament.github.io/assets/Torus-SemiBold.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 700;
+  src: url('https://mp5tournament.github.io/assets/Torus-Bold.otf');
+}
+@font-face {
+  font-family: 'osu';
+  font-weight: 900;
+  src: url('https://mp5tournament.github.io/assets/Torus-Heavy.otf');
+}
+@font-face {
+  font-family: 'cn';
+  src: url('https://mp5tournament.github.io/assets/shangshouruantang.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+    user-select: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+body.bg{
+    background: radial-gradient( #a1a,#026);
+    background-size: 200% 200%;
+    animation: bgFlow 15s linear infinite;
+}
+@keyframes bgFlow {
+    0%, 100% { background-position: 0% 0%; }
+    32% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    82% { background-position: 0% 100%; }
+}
+/* 背景方块 */
+body:not(.bg) .bg-squares{
+    display: none;
+} 
+.bg .bg-squares{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.bg .bg-squares li{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.15);
+    position: absolute;
+    bottom: -160px;
+    animation: square 10s linear infinite;
+}
+.bg .bg-squares li:nth-child(1){
+    left: 10%;
+}
+.bg .bg-squares li:nth-child(2){
+    left: 20%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+.bg .bg-squares li:nth-child(3){
+    left: 25%;
+    animation-delay: 4s;
+}
+.bg .bg-squares li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.25);
+    animation-duration: 22s;
+}
+.bg .bg-squares li:nth-child(5){
+    left: 70%;
+}
+.bg .bg-squares li:nth-child(6){
+    left: 80%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.2);
+    animation-delay: 3s;
+}
+.bg .bg-squares li:nth-child(7){
+    left: 32%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 7s;
+}
+.bg .bg-squares li:nth-child(8){
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 15s;
+    animation-duration: 40s;
+}
+.bg .bg-squares li:nth-child(9){
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.3);
+    animation-delay: 2s;
+    animation-duration: 40s;
+}
+.bg .bg-squares li:nth-child(10){
+    left: 90%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 11s;
+}
+@keyframes square {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-120vh) rotate(600deg);
+    }
+}
+
+/* mods图标 */
+i {
+    display: inline-block;
+    width: 0.5em;
+    height: 1em;
+}
+i::after{
+    content: '';
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 0.2em white;
+}
+
+.HT::after { background-image: url('https://mp5tournament.github.io/assets/HT.png'); }
+.DT::after { background-image: url('https://mp5tournament.github.io/assets/DT.png'); }
+
+.EZ::after { background-image: url('https://mp5tournament.github.io/assets/EZ.png'); }
+.HR::after { background-image: url('https://mp5tournament.github.io/assets/HR.png'); }
+.HD::after { background-image: url('https://mp5tournament.github.io/assets/HD.png'); }
+.FL::after { background-image: url('https://mp5tournament.github.io/assets/FL.png'); }
+
+.NM::after { background-image: url('https://mp5tournament.github.io/assets/NM.png'); }
+/* 主逻辑 */
+#main {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+.header .game:hover, .player .username:hover{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-family: 'cn';
+    font-weight: 400;
+    font-size: 3rem;
+    display: block;
+    height:4rem;
+    filter: drop-shadow(0 0 0.1rem rgba(255,255,128,0.8)) drop-shadow(0 0 0.5rem rgba(238,221,255,0.6));
+}
+
+.scroll{
+    white-space: nowrap;
+    height: 1em;
+    width: 4.5rem;
+    line-height: 1em;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-text {
+    display: inline-block; 
+    min-width: 100%;
+    position: relative;
+    left: 0;
+    animation: scrolling 10s infinite linear;
+}
+.scroll-text-picker {
+    display: inline-block; 
+    min-width: 100%;
+    position: relative;
+    left: 0;
+    animation: scrolling-picker 10s infinite linear;
+}
+
+
+/* 文本滚动动画 */
+@keyframes scrolling {
+    0%, 10% {
+        transform: translateX(0);
+    }
+    50%,60% {
+        transform: translateX(calc(min(0px, 4.5rem - 100%)));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes scrolling-picker {
+    0%, 10% {
+        transform: translateX(0);
+    }
+    50%,60% {
+        transform: translateX(calc(min(0px, 3.5rem - 100%)));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+td:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+td {
+    border: 0.05rem solid  rgba(0,0,0,0.1);
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    padding: 0 0.25rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 5rem;
+    height: 5rem;
+    max-width: 5rem;
+    max-height: 5rem;
+}
+td.rank{
+    width:3rem;
+}
+.header .game, .header .round{
+    background-size: 100% 100%;
+    position: relative;
+}
+.header .game::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+.header .game:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+}
+.header .game > div{
+    position: relative;
+    z-index: 20;
+}
+.header .game .round-game{
+    font-family: 'osu';
+    font-weight: 700;
+    font-size:1.2rem;
+    height:1.2rem;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+    text-align: center;
+}
+.header .game .pick *{
+    color:#aaa;
+    height: 1rem;
+    line-height: 1rem;
+}
+.header .game .pick .by{
+    font-size:0.6rem;
+    float:left;
+}
+.header .game .pick .picker{
+    width: 3.5rem;
+    font-size:0.8rem;
+    font-family: 'osu';
+    font-weight: 600;
+    float: right;
+}
+.header .game .song-title{
+    height: 1.1rem;
+}
+.header .game .song-title *{
+    color: rgba(255,255,255,0.5);
+    font-size:0.6rem;
+}
+.header .game .mods{
+    height:1rem;
+}
+.header .game .mods .fixed{
+    float: left;
+    margin-right: 0.5em;
+}
+.header .game .mods .award{
+    float: right;
+    margin-right: 0.5em;
+}
+
+.header .rank,.header .username,.header .round{
+    background-color: rgba(255,255,255,0.2);
+}
+.header .rank:hover,.header .username:hover,.header .round:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.header .rank div,.header .username div{
+    text-align: center;
+    font-family: 'cn';
+    font-size: 1.4rem;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+}
+.header .round .text{
+    text-align: center;
+    font-family: 'cn';
+    filter: drop-shadow(0 0 0.2rem #ff8);
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+.header .round .logo,.header .round .number{
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-family: 'osu';
+    font-weight: 700;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+}
+
+.player .rank div{
+    text-align: center;
+    font-family: 'osu';
+    font-size: 700;
+    font-size: 1.4rem;
+    filter: drop-shadow(0 0 0.2rem #ff8);
+}
+.player .username {
+    text-align: center;
+}
+.player .username img{
+    margin: auto;
+    width:3rem;
+    height:3rem;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0 0 0.2rem #ff0) drop-shadow(0 0 0.3rem #edf);
+}
+.player .username div{
+    font-family: 'osu';
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.player td.game,.player td.round{
+    padding: 0 0.5rem;
+}
+
+.player .round .logo{
+    font-family: 'osu';
+    word-spacing: -0.25rem;
+    text-align: center;
+    font-size: 1.8rem;
+    height:1.8rem;
+    margin-top: 0.4rem;
+}
+.player .round .logo.eliminate{
+    filter: drop-shadow(0 0 0.2rem #f00) drop-shadow(0 0 0.4rem #f64) drop-shadow(0 0 0.5rem #f64);
+}
+.player .round .logo.pass{
+    filter: drop-shadow(0 0 0.4rem #8af);
+}
+.player .round .logo.champion{
+    filter: drop-shadow(0 0 0.2rem #8af) drop-shadow(0 0 0.4rem #ff8) drop-shadow(0 0 0.5rem #ff8);
+}
+.player .round .logo.award{
+    filter: drop-shadow(0 0 0.4rem #8af);
+}
+.player .round .logo.going{
+    filter: drop-shadow(0 0 0.4rem #fa0);
+}
+
+.player .rank-points{
+    height: 1.4rem;
+}
+.player .rank-points .rank{
+    font-family: 'osu';
+    font-weight: 400;
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    word-spacing: -0.25rem;
+    float: left;
+}
+.player .rank-points .rank .half{
+    font-size:0.7rem;
+}
+
+.rank-1{
+    font-weight: 700 !important;
+    word-spacing: -0.15rem !important;
+    color: rgb(255,232,72) !important;
+    filter: drop-shadow(0 0 0.25rem rgba(255,232,72,0.5)) drop-shadow(0 0 0.1rem rgba(255,232,72,0.8)) !important;
+}
+.rank-1 .half{
+    font-weight: 700 !important;
+    color: rgb(255,232,72) !important;
+    filter: drop-shadow(0 0 0.1rem rgba(255,232,72,0.5)) !important;
+}
+.rank-2{
+    font-weight: 700 !important;
+    color: rgb(192,192,220) !important;
+    filter: drop-shadow(0 0 0.25rem rgba(192,192,220,0.5)) drop-shadow(0 0 0.1rem rgba(192,192,220,0.8)) !important;
+}
+.rank-2 .half{
+    font-weight: 700 !important;
+    color: rgb(192,192,220) !important;
+    filter: drop-shadow(0 0 0.1rem rgba(192,192,220,0.5)) !important;
+}
+.rank-3{
+    font-weight: 700 !important;
+    color: rgb(240,172,72) !important;
+    filter: drop-shadow(0 0 0.25rem rgba(240,172,72,0.5)) drop-shadow(0 0 0.1rem rgba(240,172,72,0.8)) !important;
+}
+.rank-3 .half{
+    font-weight: 700 !important;
+    color: rgb(240,172,72) !important;
+    filter: drop-shadow(0 0 0.1rem rgba(240,172,72,0.5)) !important;
+}
+.player .points{
+    font-family: 'Consolas';
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    height: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.75);
+    float: right;
+}
+.player .game .award-mods{
+    height: 1.4rem;
+    margin-top: 0.4rem;
+}
+.player .game .award-mods .award{
+    float: left;
+}
+.player .game .award-mods .mods{
+    float: right;
+    margin-right: 0.5em;
+}
+.player .game .score{
+    font-family: 'Consolas';
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.75);
+    text-align: right;
+}
+
+
+.player .lite-rank{
+    width:100%;
+    text-align: center;
+    font-family: 'osu';
+    font-weight: 400;
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    word-spacing: -0.25rem;
+    float: left;
+    margin-bottom: 0.25rem;
+}
+.player .lite-score{
+    width:100%;
+    text-align: center;
+    font-family: 'Consolas';
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.75);
+}
+.player .lite-points{
+    font-family: 'Consolas';
+    font-size: 0.8rem;
+    margin-top: -0.8rem;
+    transform: translateY(0.8rem);
+    height: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.75);
+    float: right;
+
+}
+</style>
+
+<script type="text/javascript" charset="utf-8" src="chrome-extension://apkomdimgoabnaokkggecggjhbbfakmo/read-more-web.iife.js" data-ext-script="chrome-extension://apkomdimgoabnaokkggecggjhbbfakmo/read-out-loud-web.js" id="read-more-web-script"></script><style>/* Copyright (C) Microsoft Corporation. All rights reserved. */
+
+.msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+    background: #ffff00 !important;
+    color: black !important;
+}
+
+.msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+    background: #b2d6f3 !important;
+    color: black !important;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background-color: Highlight !important;
+        color: HighlightText !important;
+    }
+
+    .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background: yellow !important;
+        color: black !important;
+    }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uLy4uLy4uL2Nzcy9yZWFkX291dF9sb3VkX3dlYi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOERBQThEOztBQUU5RDtJQUNJLDhCQUE4QjtJQUM5Qix1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0k7UUFDSSw4QkFBOEI7UUFDOUIsc0NBQXNDO1FBQ3RDLCtCQUErQjtJQUNuQzs7SUFFQTtRQUNJLDhCQUE4QjtRQUM5Qiw2QkFBNkI7UUFDN0IsdUJBQXVCO0lBQzNCO0FBQ0oiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBDb3B5cmlnaHQgKEMpIE1pY3Jvc29mdCBDb3Jwb3JhdGlvbi4gQWxsIHJpZ2h0cyByZXNlcnZlZC4gKi9cclxuXHJcbi5tc3JlYWRvdXQtd29yZC1oaWdobGlnaHQ6bm90KC5tc3JlYWRvdXQtaW5hY3RpdmUtaGlnaGxpZ2h0KSB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmZjAwICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxufVxyXG5cclxuLm1zcmVhZG91dC1saW5lLWhpZ2hsaWdodDpub3QoLm1zcmVhZG91dC1pbmFjdGl2ZS1oaWdobGlnaHQpIHtcclxuICAgIGJhY2tncm91bmQ6ICNiMmQ2ZjMgIWltcG9ydGFudDtcclxuICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAoLW1zLWhpZ2gtY29udHJhc3Q6IGFjdGl2ZSkge1xyXG4gICAgLm1zcmVhZG91dC13b3JkLWhpZ2hsaWdodDpub3QoLm1zcmVhZG91dC1pbmFjdGl2ZS1oaWdobGlnaHQpIHtcclxuICAgICAgICAtbXMtaGlnaC1jb250cmFzdC1hZGp1c3Q6IG5vbmU7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogSGlnaGxpZ2h0ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY29sb3I6IEhpZ2hsaWdodFRleHQgIWltcG9ydGFudDtcclxuICAgIH1cclxuXHJcbiAgICAubXNyZWFkb3V0LWxpbmUtaGlnaGxpZ2h0Om5vdCgubXNyZWFkb3V0LWluYWN0aXZlLWhpZ2hsaWdodCkge1xyXG4gICAgICAgIC1tcy1oaWdoLWNvbnRyYXN0LWFkanVzdDogbm9uZTtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB5ZWxsb3cgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style data-id="immersive-translate-input-injected-css">.immersive-translate-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2147483647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.immersive-translate-attach-loading::after {
+  content: " ";
+
+  --loading-color: #f78fb6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: block;
+  margin: 12px auto;
+  position: relative;
+  color: white;
+  left: -100px;
+  box-sizing: border-box;
+  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-2000%, -50%);
+  z-index: 100;
+}
+
+.immersive-translate-loading-spinner {
+  vertical-align: middle !important;
+  width: 10px !important;
+  height: 10px !important;
+  display: inline-block !important;
+  margin: 0 4px !important;
+  border: 2px rgba(221, 244, 255, 0.6) solid !important;
+  border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+  border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+  animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+}
+
+@-webkit-keyframes immersive-translate-loading-animation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes immersive-translate-loading-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.immersive-translate-input-loading {
+  --loading-color: #f78fb6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: block;
+  margin: 12px auto;
+  position: relative;
+  color: white;
+  left: -100px;
+  box-sizing: border-box;
+  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+}
+
+@keyframes immersiveTranslateShadowRolling {
+  0% {
+    box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  12% {
+    box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  25% {
+    box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  36% {
+    box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
+      100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
+      110px 0 var(--loading-color), 100px 0 var(--loading-color);
+  }
+
+  62% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
+      120px 0 var(--loading-color), 110px 0 var(--loading-color);
+  }
+
+  75% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      130px 0 var(--loading-color), 120px 0 var(--loading-color);
+  }
+
+  87% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
+  }
+
+  100% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.immersive-translate-modal {
+  position: fixed;
+  z-index: 2147483647;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
+
+.immersive-translate-modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 40px 24px 24px;
+  border-radius: 12px;
+  width: 350px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .immersive-translate-modal-content {
+    margin: 25% auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .immersive-translate-modal-content {
+    width: 80vw !important;
+    margin: 20vh auto !important;
+    padding: 20px 12px 12px !important;
+  }
+
+  .immersive-translate-modal-title {
+    font-size: 14px !important;
+  }
+
+  .immersive-translate-modal-body {
+    font-size: 13px !important;
+    max-height: 60vh !important;
+  }
+
+  .immersive-translate-btn {
+    font-size: 13px !important;
+    padding: 8px 16px !important;
+    margin: 0 4px !important;
+  }
+
+  .immersive-translate-modal-footer {
+    gap: 6px !important;
+    margin-top: 16px !important;
+  }
+}
+
+.immersive-translate-modal .immersive-translate-modal-content-in-input {
+  max-width: 500px;
+}
+.immersive-translate-modal-content-in-input .immersive-translate-modal-body {
+  text-align: left;
+  max-height: unset;
+}
+
+.immersive-translate-modal-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.immersive-translate-modal-body {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .immersive-translate-modal-body {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}
+
+.immersive-translate-close {
+  color: #666666;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.immersive-translate-close:hover,
+.immersive-translate-close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.immersive-translate-modal-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.immersive-translate-btn {
+  width: fit-content;
+  color: #fff;
+  background-color: #ea4c89;
+  border: none;
+  font-size: 14px;
+  margin: 0 8px;
+  padding: 9px 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.immersive-translate-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.immersive-translate-btn:hover {
+  background-color: #f082ac;
+}
+.immersive-translate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.immersive-translate-btn:disabled:hover {
+  background-color: #ea4c89;
+}
+
+.immersive-translate-link-btn {
+  background-color: transparent;
+  color: #ea4c89;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+}
+
+.immersive-translate-cancel-btn {
+  /* gray color */
+  background-color: rgb(89, 107, 120);
+}
+
+.immersive-translate-cancel-btn:hover {
+  background-color: hsl(205, 20%, 32%);
+}
+
+.immersive-translate-action-btn {
+  background-color: transparent;
+  color: #ea4c89;
+  border: 1px solid #ea4c89;
+}
+
+.immersive-translate-btn svg {
+  margin-right: 5px;
+}
+
+.immersive-translate-link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #ea4c89;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.immersive-translate-primary-link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #ea4c89;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.immersive-translate-modal input[type="radio"] {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.immersive-translate-modal label {
+  cursor: pointer;
+}
+
+.immersive-translate-close-action {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.imt-image-status {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 16px !important;
+}
+.imt-image-status img,
+.imt-image-status svg,
+.imt-img-loading {
+  width: 28px !important;
+  height: 28px !important;
+  margin: 0 0 8px 0 !important;
+  min-height: 28px !important;
+  min-width: 28px !important;
+  position: relative !important;
+}
+.imt-img-loading {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAPHRSTlMABBMIDyQXHwyBfFdDMSw+OjXCb+5RG51IvV/k0rOqlGRM6KKMhdvNyZBz9MaupmxpWyj437iYd/yJVNZeuUC7AAACt0lEQVRIx53T2XKiUBCA4QYOiyCbiAsuuGBcYtxiYtT3f6/pbqoYHVFO5r+iivpo6DpAWYpqeoFfr9f90DsYAuRSWkFnPO50OgR9PwiCUFcl2GEcx+N/YBh6pvKaefHlUgZd1zVe0NbYcQjGBfzrPE8Xz8aF+71D8gG6DHFPpc4a7xFiCDuhaWgKgGIJQ3d5IMGDrpS4S5KgpIm+en9f6PlAhKby4JwEIxlYJV9h5k5nee9GoxHJ2IDSNB0dwdad1NAxDJ/uXDHYmebdk4PdbkS58CIVHdYSUHTYYRWOJblWSyu2lmy3KNFVJNBhxcuGW4YBVCbYGRZwIooipHsNqjM4FbgOQqQqSKQQU9V8xmi1QlgHqQQ6DDBvRUVCDirs+EzGDGOQTCATgtYTnbCVLgsVgRE0T1QE0qHCFAht2z6dLvJQs3Lo2FQoDxWNUiBhaP4eRgwNkI+dAjVOA/kUrIDwf3CG8NfNOE0eiFotSuo+rBiq8tD9oY4Qzc6YJw99hl1wzpQvD7ef2M8QgnOGJfJw+EltQc+oX2yn907QB22WZcvlUpd143dqQu+8pCJZuGE4xCuPXJqqcs5sNpsI93Rmzym1k4Npk+oD1SH3/a3LOK/JpUBpWfqNySxWzCfNCUITuDG5dtuphrUJ1myeIE9bIsPiKrfqTai5WZxbhtNphYx6GEIHihyGFTI69lje/rxajdh0s0msZ0zYxyPLhYCb1CyHm9Qsd2H37Y3lugVwL9kNh8Ot8cha6fUNQ8nuXi5z9/ExsAO4zQrb/ev1yrCB7lGyQzgYDGuxq1toDN/JGvN+HyWNHKB7zEoK+PX11e12G431erGYzwmytAWU56fkMHY5JJnDRR2eZji3AwtIcrEV8Cojat/BdQ7XOwGV1e1hDjGGjXbdArm8uJZtCH5MbcctVX8A1WpqumJHwckAAAAASUVORK5CYII=");
+  background-size: 28px 28px;
+  animation: image-loading-rotate 1s linear infinite !important;
+}
+
+.imt-image-status span {
+  color: var(--bg-2, #fff) !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+  font-weight: 500 !important;
+  font-family: "PingFang SC", Arial, sans-serif !important;
+}
+
+.imt-primary-button {
+  display: flex;
+  padding: 12px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #ea4c89;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.imt-retry-text {
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.imt-action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imt-modal-content-text {
+  text-align: left;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@keyframes image-loading-rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.imt-linear-gradient-text {
+  background: linear-gradient(90deg, #00a6ff 0%, #c369ff 52.4%, #ff4590 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.imt-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imt-linear-black-btn {
+  border-radius: 50px;
+  background: linear-gradient(66deg, #222 19%, #696969 94.25%);
+  height: 48px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+</style></head>
+<body class="bg">
+    <div style="z-index: 2;">
+        <h1><span id="h2">MP5PUBG: Room C</span> <span id="h3">结果</span></h1>
+        <table id="main"><tr class="header"><td class="rank"><div>👑</div></td><td class="username"><div>选手</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1785/covers/list.jpg&quot;);">
+<div class="round-game">1 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (5)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">U.N. Owen Was Her?</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2449055/covers/list.jpg&quot;);">
+<div class="round-game">1 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">___eric___</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">hectopascal</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2322339/covers/list.jpg&quot;);">
+<div class="round-game">1 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (3)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">花海</span></div>
+<div class="mods"><div class="fixed"><i class="DT"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2096231/covers/list.jpg&quot;);">
+<div class="round-game">1 - 4</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (2)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Red Goose</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">1</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1765453/covers/list.jpg&quot;);">
+<div class="round-game">2 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">shuaiyue</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">eth剣</span></div>
+<div class="mods"><div class="fixed"><i class="DT"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2285600/covers/list.jpg&quot;);">
+<div class="round-game">2 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">ll993675730</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">What Call This Day ? (feat. にんじん from ロクデナシ)</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="EZ"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2252613/covers/list.jpg&quot;);">
+<div class="round-game">2 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">SparkNights</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">トウメイナユメ</span></div>
+<div class="mods"><div class="fixed"><i class="DT"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/353100/covers/list.jpg&quot;);">
+<div class="round-game">2 - 4</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">主办 (4)</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">猪突猛進ガール</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">2</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/1965123/covers/list.jpg&quot;);">
+<div class="round-game">3 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Memories329</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Collapsing (feat. Bjorn “Speed” Strid)</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/2170949/covers/list.jpg&quot;);">
+<div class="round-game">3 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">lthreewood</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Lost in the Abyss</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="NM"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/967021/covers/list.jpg&quot;);">
+<div class="round-game">3 - 3</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">My Angel Kazuha</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">POISON -KO3 Remix-</span></div>
+<div class="mods"><div class="fixed"><i class="DT"></i></div><div class="award"><i class="HD"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">3</div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/786141/covers/list.jpg&quot;);">
+<div class="round-game">4 - 1</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">SzZzC</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Ashes of the Dawn</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="game" style="background-image: url(&quot;https://assets.ppy.sh/beatmaps/26652/covers/list.jpg&quot;);">
+<div class="round-game">4 - 2</div>
+<div class="pick">
+    <div class="by">by</div>
+    <div class="picker scroll"><span class="scroll-text-picker">Creap</span></div>
+</div>
+<div class="song-title scroll"><span class="scroll-text">Chocolate</span></div>
+<div class="mods"><div class="fixed"><i class="NM"></i></div><div class="award"><i class="HR"></i></div></div></td><td class="round"><div class="logo">⚖️</div><div class="text">Round</div><div class="number">4</div></td></tr><tr class="player"><td class="rank"><div class="rank-1">1</div></td><td class="username"><img src="https://a.ppy.sh/9641731" alt="SparkNights">
+<div class="scroll"><span class="scroll-text">SparkNights</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">197,333</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">481,779</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">349,565</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">334,047</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">340</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">79,008</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">88</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">805,598</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">88</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">1,363,413</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">851,810</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">690</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">139,475</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">899,964</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">1,391,228</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">930</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">33</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">173,250</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">33</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">626,583</div></td><td class="round">
+<div class="logo going">🔥</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">997</div></div></td></tr><tr class="player"><td class="rank"><div class="rank-2">2</div></td><td class="username"><img src="https://a.ppy.sh/17027628" alt="shuaiyue">
+<div class="scroll"><span class="scroll-text">shuaiyue</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">203,309</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">387,246</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">286,715</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">519,754</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">370</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">247,016</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">584,130</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">63</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">1,074,096</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">381,383</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">608</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">133,985</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">1,077,459</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">867,358</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">828</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">67</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">216,807</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">67</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">686,495</div></td><td class="round">
+<div class="logo going">🔥</div>
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">961</div></div></td></tr><tr class="player"><td class="rank"><div class="rank-3">3</div></td><td class="username"><img src="https://a.ppy.sh/17908675" alt="-Hokusai-">
+<div class="scroll"><span class="scroll-text">-Hokusai-</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">222,668</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">294,527</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">92,855</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">305,249</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">240</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">12,956</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">547,931</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">1,396,390</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">545,760</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">453</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">199,188</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">434,823</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">398,080</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">613</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">241,985</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">447,009</div></td><td class="round">
+<div class="logo going">🔥</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">713</div></div></td></tr><tr class="player"><td class="rank"><div class="rank-4">4</div></td><td class="username"><img src="https://a.ppy.sh/33214747" alt="KentoKanami">
+<div class="scroll"><span class="scroll-text">KentoKanami</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">193,275</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">258,054</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="EZ"></i></div></div>
+<div class="score">119,598</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">240,228</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">190</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">13</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="EZ"></i></div></div>
+<div class="score">32,693</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">622,611</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">75</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">1,280,061</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">397,482</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">403</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">168,116</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">734,543</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="EZ"></i></div></div>
+<div class="score">582,815</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">603</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">144,263</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">929,700</div></td><td class="round">
+<div class="logo going">🔥</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">703</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-5">5</div></td><td class="username"><img src="https://a.ppy.sh/33697130" alt="ll993675730">
+<div class="scroll"><span class="scroll-text">ll993675730</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">180,891</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">255,000</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">241,479</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">90</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">422,595</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">280</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">63</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">69,784</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-1"># 1</div><div class="points">100</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">809,492</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">288,583</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">214,101</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">443</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">70,139</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">261,861</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">309,839</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">443</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-6">6</div></td><td class="username"><img src="https://a.ppy.sh/36927558" alt="lthreewood">
+<div class="scroll"><span class="scroll-text">lthreewood</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">145,983</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">141,788</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">196,410</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">70</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">397,962</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">180</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">69,291</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">51,777</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">13</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">671,010</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">88</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">688,254</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">330</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">107,938</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">516,819</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">317,573</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">410</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-7">7</div></td><td class="username"><img src="https://a.ppy.sh/20459860" alt="Creap">
+<div class="scroll"><span class="scroll-text">Creap</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">0</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">0</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">244,039</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">320,240</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">130</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-2"># 2</div><div class="points">88</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">85,271</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">13</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="EZ"></i></div></div>
+<div class="score">334,150</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">750,505</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">63</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">504,072</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">318</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-8">8</div></td><td class="username"><img src="https://a.ppy.sh/14438960" alt="My Angel Kazuha">
+<div class="scroll"><span class="scroll-text">My Angel Kazuha</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">122,655</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">236,441</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">60</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">239,061</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">296,789</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">160</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">61,818</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-4"># 4</div><div class="points">63</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">596,573</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">868,856</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">13</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">379,997</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">310</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-9">9</div></td><td class="username"><img src="https://a.ppy.sh/32630602" alt="SzZzC">
+<div class="scroll"><span class="scroll-text">SzZzC</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">64,164</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">137,802</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">40</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">154,338</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-3"># 3</div><div class="points">80</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">400,721</div></td><td class="round">
+<div class="logo pass">▶️</div>
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">140</div></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">50,650</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-7"># 7</div><div class="points">25</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">345,160</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-5"># 5</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">925,295</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">38</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">381,494</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">278</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-10">10</div></td><td class="username"><img src="https://a.ppy.sh/16054558" alt="___eric___">
+<div class="scroll"><span class="scroll-text">___eric___</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">180,705</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-6"># 6</div><div class="points">50</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="HD"></i></div></div>
+<div class="score">237,006</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="DT"></i><i class="HD"></i></div></div>
+<div class="score">83,362</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="HR"></i></div></div>
+<div class="score">91,130</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">110</div></div></td></tr><tr class="player eliminate"><td class="rank"><div class="rank-11">11</div></td><td class="username"><img src="https://a.ppy.sh/16416029" alt="Memories329">
+<div class="scroll"><span class="scroll-text">Memories329</span></div></td><td class="game">
+<div class="rank-points"><div class="rank rank-9"># 9</div><div class="points">20</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">105,861</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-8"># 8</div><div class="points">30</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="NM"></i></div></div>
+<div class="score">148,538</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-10"># 10</div><div class="points">10</div></div>
+<div class="award-mods"><div class="award">⭐</div><div class="mods"><i class="DT"></i></div></div>
+<div class="score">88,218</div></td><td class="game">
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">0</div></div>
+<div class="award-mods"><div class="award"></div><div class="mods"><i class="EZ"></i><i class="FL"></i></div></div>
+<div class="score">1,475</div></td><td class="round">
+<div class="logo eliminate">☠️</div>
+<div class="rank-points"><div class="rank rank-11"># 11</div><div class="points">60</div></div></td></tr></table>
+    </div>
+    
+    <ul class="bg-squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+<script>
+const main=document.getElementById('main')
+// 调整大小
+let width=1
+let height=1
+
+function calculateSize(){
+    try{
+        width=main.querySelector('tr').querySelectorAll('td').length*5+3
+        height=main.querySelectorAll('tr').length*5+8
+    }catch{return}
+    handleResize()
+}
+
+function handleResize() {
+    document.querySelector('html').style.fontSize=Math.min(
+        window.innerWidth/width,
+        window.innerHeight/height,
+        20,
+    )+'px'
+}
+
+if(!document.querySelector('.remove'))calculateSize()
+window.addEventListener('resize', handleResize)
+</script>
+
+
+
+
+</body><div id="immersive-translate-browser-popup" style="all: initial"></div></html>
